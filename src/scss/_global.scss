@@ -42,6 +42,12 @@ h2 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+}
+
 // Border-radius
 @mixin border-b {
   border-radius: 25px;
@@ -111,9 +117,4 @@ h2 {
 .title-folder {
   margin-bottom: 20px;
   padding-right: 70px;
-  h2 {
-    font-size: 42px;
-    line-height: 49px;
-    letter-spacing: 0.05em;
-  }
 }
