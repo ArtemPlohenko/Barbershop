@@ -1,7 +1,118 @@
 @import "global";
 @import "libs";
+@import "header";
 @import "media";
 @import "slider";
 @import "vars";
 
 ///////////////////////
+
+.holder-banner {
+  position: relative;
+}
+
+.holder-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $light-blue;
+  position: absolute;
+  top: 40%;
+  left: 17%;
+  .sub-title {
+    color: rgba($light-blue, 0.6);
+    &::before {
+      background: rgba($light-blue, 0.6);
+    }
+  }
+  h1 {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 0.05em;
+    color: $white;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  p {
+    letter-spacing: 0.02em;
+  }
+}
+
+.section {
+  color: $gray;
+  .section-holder {
+    display: flex;
+    margin: 0 -15px;
+  }
+  .imgs-line {
+    display: flex;
+    margin: 0 -15px;
+    li {
+      padding: 0 15px;
+    }
+  }
+  .imgs-line,
+  .just-info {
+    padding: 0 15px;
+  }
+}
+
+.offer-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  padding-right: 100px;
+  margin-bottom: 45px;
+}
+
+#prices {
+  position: relative;
+  .sub-title {
+    color: rgba($light-blue, 0.6);
+    &::before {
+      background: rgba($light-blue, 0.6);
+    }
+  }
+}
+
+.cards-block {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  .card {
+    padding: 30px 20px;
+    width: 49%;
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    li {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+      color: $light-blue;
+      white-space: nowrap;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span {
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        max-width: 262px;
+        background: rgba($light-blue, 0.12);
+        margin-bottom: 11px;
+      }
+    }
+  }
+}

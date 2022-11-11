@@ -4,9 +4,10 @@
   <body>
     @@include('html/header.html', {})
     <main>
-      <div class="container">
-        <section class="heal">
+      <section class="heal">
+        <div class="container">
           <div class="holder-banner">
+            <!-- // Slider -->
             <ul class="carousel">
               <li class="slider__item">
                 <img
@@ -27,11 +28,13 @@
                 />
               </li>
             </ul>
-            <!-- // Slider -->
-            <!-- // Slider -->
-            <ul>
+            <ul class="social">
               <li>
-                <a href="#" target="_blank" rel="noopener noreferrer nofollow"
+                <a
+                  href="#"
+                  class="active"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
                   >Instagram</a
                 >
               </li>
@@ -48,52 +51,151 @@
               <p>We work quickly, carefully and with style.</p>
             </div>
           </div>
-        </section>
-
-        <section class="about">
-          <ul>
-            <li>
-              <img
-                src="./img/img-1.jpg"
-                alt="haircuts"
-                width="270"
-                height="445"
-              />
-            </li>
-            <li>
-              <img
-                src="./img/img-2.jpg"
-                alt="haircuts"
-                width="270"
-                height="445"
-              />
-            </li>
-          </ul>
-          <div class="just-info">
-            <div class="sub-title">About</div>
-            <h2>Best Barbershop in your city</h2>
-            <p>
-              If you want to add more confidence to your image, you should
-              definitely visit us.
-            </p>
-            <p>
-              We are a team that never stops at what has been achieved and are
-              thirsty for changes. And when you fall into the hands of our
-              master, you will never be the same again. We are a team that is
-              always "on the same wave" with clients. Therefore, we are always
-              ready to improve everyone who comes to us!
-            </p>
-            <button class="btn" type="button">Online-booking</button>
+        </div>
+      </section>
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-holder">
+            <ul class="imgs-line">
+              <li>
+                <img
+                  src="./img/img-1.jpg"
+                  alt="haircuts"
+                  width="270"
+                  height="445"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/img-2.jpg"
+                  alt="haircuts"
+                  width="270"
+                  height="445"
+                />
+              </li>
+            </ul>
+            <div class="just-info">
+              <div class="title-folder">
+                <div class="sub-title">About</div>
+                <h2 class="color-b">Best Barbershop in your city</h2>
+              </div>
+              <div class="text">
+                <div class="offer-text">
+                  If you want to add more confidence to your image, you should
+                  definitely visit us.
+                </div>
+                <p>
+                  We are a team that never stops at what has been achieved and
+                  are thirsty for changes. And when you fall into the hands of
+                  our master, you will never be the same again. We are a team
+                  that is always "on the same wave" with clients. Therefore, we
+                  are always ready to improve everyone who comes to us!
+                </p>
+              </div>
+              <button class="btn" type="button">Online-booking</button>
+            </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+      <section
+        id="prices"
+        class="section"
+        style="
+          background-image: url(./img/prices-img.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
+        <div class="container">
+          <div class="title-folder">
+            <div class="sub-title">Spend your time with the best masters</div>
+            <h2 class="color-w">Services and prices</h2>
+          </div>
+          <div class="cards-block">
+            <ul class="card">
+              <li>
+                <p>Men’s haircut</p>
+                <span></span>
+                <p>from 300 uah.</p>
+              </li>
+              <li>
+                <p>Beard trim</p>
+                <span></span>
+                <p>from 300 uah.</p>
+              </li>
+              <li>
+                <p>Mustache trim</p>
+                <span></span>
+                <p>from 300 uah.</p>
+              </li>
+              <li>
+                <p>Straight razor shave</p>
+                <span></span>
+                <p>from 300 uah.</p>
+              </li>
+            </ul>
+            <ul class="card">
+              <li>
+                <p>Trainee’s haircut</p>
+                <span></span>
+                <p>from 50 uah.</p>
+              </li>
+              <li>
+                <p>Haircut under the nozzle</p>
+                <span></span>
+                <p>from 200 uah.</p>
+              </li>
+              <li>
+                <p>Children’s haircut (0-12 y.o.)</p>
+                <span></span>
+                <p>from 300 uah.</p>
+              </li>
+              <li>
+                <p>Camouflage of gray hair</p>
+                <span></span>
+                <p>from 200 uah.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="center-block">
+            <button class="btn color-w" type="button">Online-booking</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-holder">
+            <div class="just-info">
+              <div class="title-folder">
+                <div class="sub-title">Old traditional school</div>
+                <h2 class="color-b">¿Why people come to us?</h2>
+              </div>
+              <div class="text">
+                <div class="offer-text">
+                  Only good things are said about us. But it's better to see and
+                  feel 1 time than read 10 times.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="barbers" class="section bg-gray">
+        <div class="container">
+          <div class="title-folder">
+            <div class="sub-title">For true enjoyers of the atmosphere</div>
+            <h2 class="color-b">Our barbers</h2>
+          </div>
+        </div>
+      </section>
     </main>
     @@include('html/footer.html', {})
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.6.1.min.js"
     ></script>
-    <!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
     <script src="js/app.min.js"></script>
   </body>
 </html>
