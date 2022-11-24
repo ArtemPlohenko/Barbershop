@@ -5,6 +5,7 @@ import "slick-carousel";
 flsFunctions.isWebp();
 
 function ready() {
+  // Slick slider
   $(document).ready(function () {
     $(".carousel").slick({
       dots: true,
@@ -17,6 +18,16 @@ function ready() {
       nextArrow:
         '<button class="slick-next" aria-label="Forward" type="button">Forward</button>',
     });
+  });
+
+  // Smooth scrolling
+  $(".anchor-link").click(function (e) {
+    e.preventDefault();
+    var target = $($(this).attr("href"));
+    if (target.length) {
+      var scrollTo = target.offset().top;
+      $("body, html").animate({ scrollTop: scrollTo + "px" }, 800);
+    }
   });
 }
 
