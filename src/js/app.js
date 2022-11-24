@@ -12,6 +12,10 @@ function ready() {
       speed: 500,
       fade: true,
       cssEase: "linear",
+      prevArrow:
+        '<button class="slick-prev" aria-label="Back" type="button">Back</button>',
+      nextArrow:
+        '<button class="slick-next" aria-label="Forward" type="button">Forward</button>',
     });
   });
 }
