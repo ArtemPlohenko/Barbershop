@@ -1,2 +1,10 @@
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .carousel {
+    .slider__item {
+      max-width: 570px;
+      overflow: hidden;
+      //   display: block;
+      margin-left: auto;
+    }
+  }
 }

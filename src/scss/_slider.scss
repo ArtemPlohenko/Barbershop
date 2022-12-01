@@ -5,6 +5,7 @@
   .slick-slide {
     img {
       margin-left: auto;
+      right: 0;
     }
   }
   .slide-item {
@@ -12,6 +13,10 @@
       transform: matrix(-1, 0, 0, 1, 0, 0);
     }
   }
+}
+
+.slider__item {
+  display: block !important;
 }
 
 // Slider
@@ -31,7 +36,7 @@
 }
 
 .carousel {
-  position: relative;
+  // position: relative;
   .slick-arrow {
     position: absolute;
     width: 60px;
